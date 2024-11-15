@@ -139,7 +139,7 @@ The model achieves an overall accuracy of 90%, indicating strong performance in 
 To set up the project, follow these steps:
 
 1. Clone the repository:
-git clone https://github.com/yourusername/fashion-image-classification.git
+git clone git@github.com:iamisaackn/AI-Fashion-Image-Classification.git
 cd fashion-image-classification
 
 2. Install the required packages:
