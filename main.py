@@ -1,3 +1,4 @@
+# Import necessary libraries
 import streamlit as st
 import tensorflow as tf
 from PIL import Image
@@ -17,10 +18,15 @@ class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
 
 # Function to preprocess the uploaded image
 def preprocess_image(image):
-    img = Image.open(image)
-    img = img.resize((28, 28))
-    img = img.convert('L')  # Convert to grayscale
-    img_array = np.array(img) / 255.0
+    # Remove background
+    image_no_bg = remove(image)
+    # Convert to grayscale
+    img_gray = image_no_bg.convert('L')
+    # Resize the image to 28x28 pixels
+    img_resize = img_gray.resize((28, 28))
+    # Convert the image to a numpy array and normalize pixel values
+    img_array = np.array(img_resize) / 255.0
+    # Expand dimensions to match the input shape expected by the model
     img_array = img_array.reshape((1, 28, 28, 1))
     return img_array
 
@@ -48,3 +54,16 @@ if uploaded_image is not None:
             prediction = class_names[predicted_class]
 
             st.success(f'Prediction: {prediction}')
+
+# Predict the labels of sample images
+sample_images = [img1, img2, img3, img4]
+labels = []
+
+for img in sample_images:
+    label = np.argmax(model.predict(img).round(2))
+    labels.append(label)
+
+for i, label in enumerate(labels):
+    print(f"The label number for img{i + 1} is {label}")
+    print(f"The predicted label for img{i + 1} is {class_names[label]}")
+
