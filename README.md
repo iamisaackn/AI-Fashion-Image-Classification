@@ -21,7 +21,7 @@
 ## Project Structure
 1. [Notebook](https://github.com/iamisaackn/AI-Fashion-Image-Classification/blob/main/notebook.ipynb)
 2. [Notebook PDF](https://github.com/iamisaackn/AI-Fashion-Image-Classification/blob/main/notebook.pdf)
-3. [Power Point Presentation](https://github.com/iamisaackn/AI-Fashion-Image-Classification/blob/main/Presentation.pptx)
+3. [Power Point Presentation](https://www.canva.com/design/DAGWiL2jcOs/pscWk4VbEofjOSN0A7D30A/edit?utm_content=DAGWiL2jcOs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 4. [Presentation PDF](https://github.com/iamisaackn/AI-Fashion-Image-Classification/blob/main/presentation.pdf)
 5. [Requirements File](https://github.com/iamisaackn/AI-Fashion-Image-Classification/blob/main/requirements.txt)
 6. [Read Me](https://github.com/iamisaackn/AI-Fashion-Image-Classification/blob/main/README.md)
