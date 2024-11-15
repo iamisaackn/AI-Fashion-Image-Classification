@@ -4,7 +4,7 @@ import tensorflow as tf
 from PIL import Image
 import numpy as np
 import os
-from rembg import remove  # Assuming rembg is used for background removal
+from rembg import remove 
 
 # Set the working directory and model path
 working_dir = os.path.dirname(os.path.abspath(__file__))
@@ -37,7 +37,9 @@ st.title('Fashion Item Classifier')
 uploaded_image = st.file_uploader("Upload an image...", type=["jpg", "jpeg", "png"])
 
 if uploaded_image is not None:
+    # Read the uploaded file's bytes
     image = Image.open(uploaded_image)
+    
     col1, col2 = st.columns(2)
 
     with col1:
@@ -47,7 +49,7 @@ if uploaded_image is not None:
     with col2:
         if st.button('Classify'):
             # Preprocess the uploaded image
-            img_array = preprocess_image(uploaded_image)
+            img_array = preprocess_image(image)
 
             # Make a prediction using the pre-trained model
             result = model.predict(img_array)
