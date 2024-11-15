@@ -4,6 +4,7 @@ import tensorflow as tf
 from PIL import Image
 import numpy as np
 import os
+from rembg import remove  # Assuming rembg is used for background removal
 
 # Set the working directory and model path
 working_dir = os.path.dirname(os.path.abspath(__file__))
@@ -54,15 +55,3 @@ if uploaded_image is not None:
             prediction = class_names[predicted_class]
 
             st.success(f'Prediction: {prediction}')
-
-# Predict the labels of sample images
-sample_images = [img1, img2, img3, img4]
-labels = []
-
-for img in sample_images:
-    label = np.argmax(model.predict(img).round(2))
-    labels.append(label)
-
-for i, label in enumerate(labels):
-    print(f"The label number for img{i + 1} is {label}")
-    print(f"The predicted label for img{i + 1} is {class_names[label]}")
