@@ -18,6 +18,16 @@
 11. How to Use This Repository
 12. Requirements
 
+## Project Structure
+1. [Notebook](https://github.com/iamisaackn/AI-Fashion-Image-Classification/blob/main/notebook.ipynb)
+2. [Notebook PDF](https://github.com/iamisaackn/AI-Fashion-Image-Classification/blob/main/notebook.pdf)
+3. [Power Point Presentation](https://github.com/iamisaackn/AI-Fashion-Image-Classification/blob/main/Presentation.pptx)
+4. [Presentation PDF](https://github.com/iamisaackn/AI-Fashion-Image-Classification/blob/main/presentation.pdf)
+5. [Requirements File](https://github.com/iamisaackn/AI-Fashion-Image-Classification/blob/main/requirements.txt)
+6. [Read Me](https://github.com/iamisaackn/AI-Fashion-Image-Classification/blob/main/README.md)
+7. [Streamlit App](https://ai-fashion-image-classification.streamlit.app/)
+8. [LICENSE](https://github.com/iamisaackn/AI-Fashion-Image-Classification/blob/main/LICENSE)
+
 ## Project Overview
 This project aims to develop an AI-based model for fashion image classification, addressing the growing need for efficient and accurate classification systems in the fashion industry. By leveraging advanced machine learning techniques, we aim to enhance the design, marketing, and customer experience in fashion e-commerce and retail.
 
