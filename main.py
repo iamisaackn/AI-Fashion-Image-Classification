@@ -66,4 +66,3 @@ for img in sample_images:
 for i, label in enumerate(labels):
     print(f"The label number for img{i + 1} is {label}")
     print(f"The predicted label for img{i + 1} is {class_names[label]}")
-
